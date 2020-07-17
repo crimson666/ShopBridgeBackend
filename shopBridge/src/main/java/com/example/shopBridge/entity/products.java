@@ -13,6 +13,7 @@ public class products {
 	private String PCategory;
 	private Long Price;
 	private String PDescription;
+	private String PBrand;
 	
 	
 	public int getPid() {
@@ -20,6 +21,12 @@ public class products {
 	}
 	public void setPid(int pid) {
 		Pid = pid;
+	}
+	public String getPBrand() {
+		return PBrand;
+	}
+	public void setPBrand(String pBrand) {
+		PBrand = pBrand;
 	}
 	public String getPName() {
 		return PName;
@@ -45,12 +52,9 @@ public class products {
 	public void setPDescription(String pDescription) {
 		PDescription = pDescription;
 	}
-	
-	
 	@Override
 	public String toString() {
 		return "products [Pid=" + Pid + ", PName=" + PName + ", PCategory=" + PCategory + ", Price=" + Price
-				+ ", PDescription=" + PDescription + "]";
+				+ ", PDescription=" + PDescription + ", PBrand=" + PBrand + "]";
 	}
-	
 }
